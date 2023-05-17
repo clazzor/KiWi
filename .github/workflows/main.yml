@@ -11,5 +11,4 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
-      - run: screen -SX web quit
-      - run: screen -mS web python3 main.py
+      - run: sudo systemctl restart web
