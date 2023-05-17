@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: screen -SX web quit
-      - run: screen -dmS web python3 main.py
+      - run: screen -mS web python3 main.py
