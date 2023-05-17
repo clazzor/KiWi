@@ -10,5 +10,4 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - uses: actions/checkout@main
       - run: python3 main.py
