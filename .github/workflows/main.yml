@@ -13,6 +13,6 @@ jobs:
       - uses: actions/checkout@v3
 #      - run: echo "${{toJSON(github.event)}}"      
       - run: echo "https://api.github.com/repos/clazzor/KiWi/commits/${{ github.event.head_commit.id }}"
-      - run: echo "/${{ github }}"
+      - run: echo "/${{ toJSON(github) }}"
 #      - run: systemctl --user restart web
 #      - run: systemctl --user status web
